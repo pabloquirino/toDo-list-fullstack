@@ -1,5 +1,6 @@
 import express from 'express'
 import { create } from 'express-handlebars'
+import conn from './db/conn.js'
 import Task from './models/Task.js'
 
 const app = express()

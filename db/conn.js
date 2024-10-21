@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize"
 
-const sequelize = Sequelize('nodemvc', 'root',  '',  {
+const sequelize = new Sequelize('todolist', 'root',  '',  {
     host: 'localhost',
     dialect: 'mysql'
 })
