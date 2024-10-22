@@ -1,1 +1,21 @@
 <h1>Todas as tasks</h1>
+<ul class="task-list">
+    {{#each tasks}}
+        <li>
+            <p>{{this.title}}</p>
+            <div class="actions">
+
+                <form action="" method="post">
+                    <!--concluir-->
+                </form>
+
+                <a href=""><!--editsr--></a>
+
+                <form action="">
+                    <!--excluir-->
+                </form>
+
+            </div>
+        </li>
+    {{/each}}
+</ul>
