@@ -1,6 +1,13 @@
 import Task from '../models/Task.js'
 export default class TaskController {
 
+    static async removeTask(req, res) {
+        const id = req.body.id
+
+        await Task.destroy( { where: {id: id} } )
+        res.redirect('/tasks')
+    }
+
     static async updateTaskPost(req, res) {
         const id = req.body.id
         const task = {

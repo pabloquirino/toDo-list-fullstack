@@ -79,6 +79,14 @@
     color: #06a9b4;
 }
 
+.actions form button {
+    background: none;
+    border: none;      
+    color: inherit;   
+    font: inherit;    
+    cursor: pointer; 
+}
+
 .form-control {
     display: flex;
     flex-direction: column;
