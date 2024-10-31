@@ -1,6 +1,16 @@
 import Task from '../models/Task.js'
 export default class TaskController {
 
+    static async toggleTaskStatus(req, res) {
+        const id = req.body.id
+        const done = {
+            done: req.body.done === '0' ? true : false
+        }
+
+        await Task.update( done, {where: {id: id}} )
+        res.redirect('/tasks')
+    }
+
     static async removeTask(req, res) {
         const id = req.body.id
 

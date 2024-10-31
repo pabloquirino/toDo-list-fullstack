@@ -59,6 +59,16 @@
     cursor: pointer;
 }
 
+#container .done {
+    text-decoration: line-through;
+    color: #808080;
+}
+
+#container .done:hover {
+    text-decoration: line-through;
+    color: #525151;
+}
+
 #container ul li p:hover {
     color: #06a9b4;
 }
