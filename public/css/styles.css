@@ -35,8 +35,48 @@
     max-width: 450px;
 }
 
-#container form {
+.form-add {
     margin-top: 1.5em;
+}
+
+#container ul {
+    list-style: none;
+    margin-top: 1em;
+}
+
+#container ul li {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+#container ul li p {
+    font-size: 1.3em;
+    color: #046f77;
+    user-select: none;
+    cursor: pointer;
+}
+
+#container ul li p:hover {
+    color: #06a9b4;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions i {
+    font-size: 1.3em;
+    margin-right: 1em;
+    color: #046f77;
+    cursor: pointer;
+}
+
+.actions i:hover {
+    color: #06a9b4;
 }
 
 .form-control {
