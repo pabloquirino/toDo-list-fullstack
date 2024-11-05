@@ -53,6 +53,10 @@
 }
 
 #container ul li p {
+    white-space: nowrap;
+    width: 60%;
+    overflow: hidden; 
+    text-overflow: ellipsis;
     font-size: 1.3em;
     color: #046f77;
     user-select: none;
@@ -87,6 +91,13 @@
 
 .actions i:hover {
     color: #06a9b4;
+}
+
+#edit-h1 {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .actions form button {
